@@ -2,8 +2,8 @@
 
 [![CI](https://github.com/AliAlfatemi/ncaa-deep-fusion/actions/workflows/ci.yml/badge.svg)](https://github.com/AliAlfatemi/ncaa-deep-fusion/actions/workflows/ci.yml)
 
-Neural model definitions and score/rank combination components extracted from
-the research project, with a portable fusion command and synthetic tests.
+PyTorch model definitions and score/rank fusion for aligned model predictions,
+with a command-line interface and synthetic tests.
 
 **Paper:** [Advancing NCAA March Madness Forecasts Through Deep Learning and Combinatorial Fusion Analysis](https://doi.org/10.1007/978-3-031-66431-1_38)
 
@@ -45,18 +45,15 @@ It writes fused scores/ranks and method metadata to a fresh local directory.
 - `ncaa_fusion.fusion`: validated score/rank combination for aligned arrays/data frames.
 - `ncaa_fusion.reference`: original fixed-column cognitive-diversity calculations.
 
-The model classes are available as a PyTorch library. The command combines
-predictions; it does not implement full dataset preparation, backbone training,
-model selection, or the complete published experiment grid. Reference diversity
-functions retain their original fixed model-column names and are not automatically
-used as calibrated weights by the command.
+The model classes provide building blocks for custom PyTorch training pipelines.
+The CLI combines predictions from externally trained models. Reference diversity
+functions use fixed model-column names and are available separately from the
+CLI weighting interface.
 
-## Source lineage and release scope
+## Implementation notes
 
-See [source lineage](docs/source-lineage.md). This is a maintained component
-release, not a byte-identical archive of a publication run. No published metric
-has been re-established by its synthetic tests. Source data, exported predictions,
-results, checkpoints, notebooks with outputs, and manuscript assets are excluded.
+See [implementation notes](docs/implementation.md) for model behavior, input
+validation, and the fusion interface.
 
 ## Development, citation, and license
 
