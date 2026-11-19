@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite the accompanying paper."
+type: software
+title: "ncaa-deep-fusion"
+authors:
+  - name: "Research software contributors"
+version: 0.1.0
+url: "https://github.com/AliAlfatemi/ncaa-deep-fusion"
+preferred-citation:
+  type: article
+  title: "Advancing NCAA March Madness Forecasts Through Deep Learning and\u00a0Combinatorial Fusion Analysis"
+  doi: "10.1007/978-3-031-66431-1_38"
+  authors:
+    - family-names: "Alfatemi"
+      given-names: "Ali"
+    - family-names: "Rahouti"
+      given-names: "Mohamed"
+    - family-names: "Hsu"
+      given-names: "D. Frank"
+    - family-names: "Schweikert"
+      given-names: "Christina"
+  year: 2024
+  journal: "Lecture Notes in Networks and Systems"

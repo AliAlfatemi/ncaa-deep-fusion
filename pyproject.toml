@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ncaa-deep-fusion"
+version = "0.1.0"
+description = "Research neural-model and score/rank fusion components with paper citation and regression tests"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Research software contributors"}]
+dependencies = ["torch>=2.2", "numpy>=1.26", "pandas>=2.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=9", "build>=1.2"]
+
+[project.urls]
+Repository = "https://github.com/AliAlfatemi/ncaa-deep-fusion"
+Paper = "https://doi.org/10.1007/978-3-031-66431-1_38"
+Issues = "https://github.com/AliAlfatemi/ncaa-deep-fusion/issues"
+
+[project.scripts]
+ncaa-deep-fusion = "ncaa_fusion.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ncaa_fusion", "ncaa_fusion.*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
