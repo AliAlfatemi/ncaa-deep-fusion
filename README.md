@@ -9,6 +9,8 @@ with a command-line interface and synthetic tests.
 
 **Authors:** Ali Alfatemi, Mohamed Rahouti, D. Frank Hsu, Christina Schweikert
 
+**Publication:** Intelligent Systems and Applications (IntelliSys 2024), LNNS 1067, pp. 539–560 (2024).
+
 ## Install and validate
 
 ```bash
